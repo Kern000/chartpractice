@@ -1,0 +1,39 @@
+#chart-body{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+    
+}
+
+.container{
+    flex-basis: 100%;
+    
+}
+
+@media (min-width: 600px) {    
+
+    #chart-body{
+        width: 90vw;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .container{
+        flex-basis: 70%;
+    }
+
+    #chart5{
+        width: 30vw;
+        border: none;
+        padding: none;
+        margin: none;
+    }
+    #chart6{
+        width: 30vw; 
+        border: none;
+        padding: none;
+        margin: none;
+    }
+}
+
