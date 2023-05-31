@@ -67,7 +67,8 @@ window.addEventListener('DOMContentLoaded', async function(){
             month: item.date.getMonth()
             }
         })
-
+    
+    console.log(byMonth)
     // note the amount does not change, we are just zooming in to look at the month that the amount belongs to
     // The map method is used on the filteredEarnings array to create a new array called ByMonth, which will contain objects representing the earnings grouped by month.
     // When using an arrow function with curly braces {}, you need to explicitly use the return keyword to return the object literal. Otherwise, the arrow function treats the curly braces as a block of code and does not automatically return a value. 
@@ -98,7 +99,7 @@ window.addEventListener('DOMContentLoaded', async function(){
             console.log(accum)
             return accum
         }, {}) // set empty object as initial value for 2nd argument of reduce.
-    }    
+    }
 
     let groups = groupBy(byMonth, 'month')   //call the function
     console.log(groups)
