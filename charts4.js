@@ -70,6 +70,8 @@ async function loadData2(){
     }])
 }
 
+//chart10 data is broken, so will repeat with chart9's
+
 async function loadData3(){
     let response = await axios.get("https://raw.githubusercontent.com/kunxin-chor/data-files-and-stuff/master/hands-on-6.2b/sales.json")
     let data3 = response.data
