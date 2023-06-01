@@ -88,3 +88,14 @@ let searchButton = document.querySelector('#search-Btn').addEventListener('click
 })
 
 
+// Alternate example of dynamic
+// function filterByEthnicityAndMap(object, ethinicity) {
+//     return object.filter(row => {
+//         return row.ethnic_group === ethinicity;
+//     }).map(row => {
+//         return {
+//             x: parseInt(row.year),
+//             y: parseFloat(row.crude_birth_rate)
+//         };
+//     })
+// }
